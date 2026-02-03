@@ -134,7 +134,7 @@ body {
   width: 100%;
   background:
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("hero.jpg") no-repeat center center/cover;
+    url("hero1.jpg") no-repeat center center/cover;
   display: flex;
   overflow: hidden;
   margin-top: -20px;
