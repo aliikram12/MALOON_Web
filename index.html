@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maloon Finance Company | Financial Advisory Excellence</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="logo.png" alt="Maloon Finance Logo" width="60px" height="60px">
+            <div class="date-text" id="currentDate"></div>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#expertise">Our Expertise</a></li>
+            <li><a href="#goals">Our Goals</a></li>
+            <li><a href="#case-studies">Case Studies</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <div class="user-icon">
+                <i class="fa-regular fa-user"></i>
+            </div>
+            <button class="btn-login" onclick="handleContactClick()">Contact Us</button>
+
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="hero-section" id="home">
+        <div class="overlay"></div>
+
+        <div class="container">
+            <div class="hero-card">
+                <div class="logo-area">
+                    <div class="logo-box">
+                        <img src="logo.png" alt="Maloon Finance Logo" class="main-logo">
+                    </div>
+                </div>
+
+                <h1 class="hero-title">FINANCE & MANAGEMENT</h1>
+                <p class="hero-subtitle">Advisory excellence bridging ideas with sustainable growth.</p>
+
+                <div class="hero-buttons">
+                    <button class="cta-button primary" onclick="handleDiscoverClick()">DISCOVER MORE</button>
+                    <button class="cta-button secondary" onclick="handleContactClick()">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <h2 class="section-title">ABOUT MALOON FINANCE</h2>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-header">
+                        <h3>Established 2013 | Rebranded 2025</h3>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Licensed in Saudi Arabia for Financial Consultancy (Non-Securities)</strong></p>
+                        
+                        <h4>Specializations:</h4>
+                        <ul class="specializations">
+                            <li>Financial structuring</li>
+                            <li>Credit advisory</li>
+                            <li>Corporate governance</li>
+                            <li>Investment readiness support</li>
+                        </ul>
+
+                        <div class="partnerships">
+                            <h4>Partnerships:</h4>
+                            <p>Collaborates with CMA-licensed partners and authorized crowdfunding platforms</p>
+                        </div>
+
+                        <div class="experience-badge">
+                            <span>50+</span>
+                            <small>Years Combined Experience</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-card vision-mission">
+                    <div class="vision-box">
+                        <h3>Our Vision</h3>
+                        <p>"To be the first choice for financial and business advisory in Saudi Arabia, becoming a trusted partner in the success of our clients."</p>
+                    </div>
+                    
+                    <div class="mission-box">
+                        <h3>Our Mission</h3>
+                        <p>"To deliver exceptional business advisory and financial services, exceeding client expectations through a deep understanding of their unique needs, and building long-term, trusted relationships."</p>
+                    </div>
+
+                    <div class="alignment-badge">
+                        <i class="fas fa-flag"></i>
+                        <span>Supports Saudi Vision 2030</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Expertise Section -->
+    <section class="section expertise-section" id="expertise">
+        <div class="container">
+            <h2 class="section-title">OUR EXPERTISE</h2>
+            
+            <div class="expertise-content">
+                <div class="expertise-text">
+                    <h3>Quality, Trust, and Experience</h3>
+                    <p>Our team combines in-depth knowledge with commitment to high standards, delivering unparalleled financial advisory services.</p>
+                    
+                    <div class="expertise-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Robust Financial Analysis</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-handshake"></i>
+                            <span>Trusted Partnerships</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Strategic Growth Planning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expertise-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">888+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Industry Experts</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services Section -->
+    <section class="section services-section" id="services">
+        <div class="container">
+            <h2 class="section-title">OUR SERVICES</h2>
+            
+            <div class="services-scroll-container">
+                <div class="services-track">
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Corporate Transactions (M&A) Advisory</h3>
+                        <ul>
+                            <li>Full lifecycle advisory for mergers and acquisitions</li>
+                            <li>Financial analysis and valuation</li>
+                            <li>Compliance with CMA regulations</li>
+                        </ul>
+                        <button class="service-cta" onclick="handleContactClick()">
+                            Contact Us
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-expand-alt"></i>
+                        </div>
+                        <h3>Operational Expansion & Market Entry</h3>
+                        <ul>
+                            <li>Sustainable growth strategies</li>
+                            <li>Feasibility studies</li>
+                            <li>Financial performance assessments</li>
+                            <li>Operational framework design</li>
+                        </ul>
+                        <button class="service-cta" onclick="handleContactClick()">
+                            Contact Us
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Financial Structuring for Emerging Companies</h3>
+                        <ul>
+                            <li>Robust financial and organizational structures</li>
+                            <li>Capital structuring optimization</li>
+                            <li>Risk management</li>
+                            <li>Long-term financial planning</li>
+                        </ul>
+                        <button class="service-cta" onclick="handleContactClick()">
+                            Contact Us
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <h3>Credit Advisory & Debt Restructuring</h3>
+                        <ul>
+                            <li>Independent credit advisory</li>
+                            <li>Debt restructuring solutions</li>
+                            <li>Leverage ratio optimization</li>
+                            <li>Negotiation support with financial institutions</li>
+                        </ul>
+                        <button class="service-cta" onclick="handleContactClick()">
+                            Contact Us
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <h3>Financial Oversight & Corporate Governance</h3>
+                        <ul>
+                            <li>Governance framework design and enhancement</li>
+                            <li>Transparency and accountability systems</li>
+                            <li>Internal control strengthening</li>
+                            <li>Compliance with accounting standards</li>
+                        </ul>
+                        <button class="service-cta" onclick="handleContactClick()">
+                            Contact Us
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="scroll-controls">
+                    <button class="scroll-btn prev-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="scroll-btn next-btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Goals Section -->
+    <section class="section goals-section" id="goals">
+        <div class="container">
+            <h2 class="section-title">OUR GOALS</h2>
+            
+            <div class="goals-grid">
+                <div class="goal-card">
+                    <div class="goal-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <h4>Expand global strategic partnerships</h4>
+                </div>
+                
+                <div class="goal-card">
+                    <div class="goal-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h4>Promote innovation in financial management</h4>
+                </div>
+                
+                <div class="goal-card">
+                    <div class="goal-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h4>Foster corporate governance and sustainability</h4>
+                </div>
+                
+                <div class="goal-card">
+                    <div class="goal-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h4>Providing financial and technical advice</h4>
+                </div>
+                
+                <div class="goal-card">
+                    <div class="goal-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h4>Support economic development in Saudi Arabia</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Maloon Section -->
+    <section class="section why-section">
+        <div class="container">
+            <h2 class="section-title">WHY CHOOSE MALOON</h2>
+            
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-number">01</div>
+                    <h3>Decades of Expertise</h3>
+                    <p>Extensive experience in financial advisory with proven track record</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-number">02</div>
+                    <h3>Commitment to Excellence</h3>
+                    <p>Highest standards of transparency, professionalism, and ethics</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-number">03</div>
+                    <h3>Global Partnerships</h3>
+                    <p>International connections and collaborations for comprehensive solutions</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-number">04</div>
+                    <h3>Local Market Insight</h3>
+                    <p>Deep understanding of Saudi market dynamics and regulations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners in Success Section -->
+    <section class="section partners-section">
+        <div class="container">
+            <h2 class="section-title">PARTNERS IN SUCCESS</h2>
+            
+            <div class="partners-content">
+                <div class="partners-text">
+                    <h3>Our Team Strengths</h3>
+                    <ul class="strengths-list">
+                        <li>Dedicated professionals with global expertise and local insights</li>
+                        <li>Consultants from largest national and international organizations</li>
+                        <li>Specialized financial and business advisory skills</li>
+                        <li>Experts in creating growth and sustainability solutions</li>
+                        <li>Strong public and private sector connections</li>
+                    </ul>
+                </div>
+                
+                <div class="partners-visual">
+                    <div class="visual-placeholder">
+                        <i class="fas fa-users"></i>
+                        <p>On boarding clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Case Studies Section -->
+    <section class="section case-studies-section" id="case-studies">
+        <div class="container">
+            <h2 class="section-title">CLIENT CASE STUDIES</h2>
+            
+            <div class="case-studies-grid">
+                <!-- Case 1 -->
+                <div class="case-card">
+                    <div class="case-category">
+                        <span>Investment Fund</span>
+                    </div>
+                    <h3>Saudi Economic Diversification Fund</h3>
+                    <p>Supporting Saudi Arabia's economic diversification by investing in key non-oil sectors.</p>
+                    <div class="case-details">
+                        <div class="detail-item">
+                            <i class="fas fa-bullseye"></i>
+                            <span>Target: Pre-seed to Series C startups and SMEs</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-star"></i>
+                            <span>Shariah-compliant private equity</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-globe"></i>
+                            <span>Goal: Attract global investments</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 2 -->
+                <div class="case-card">
+                    <div class="case-category">
+                        <span>Industrial Sector</span>
+                    </div>
+                    <h3>Industrial Transformation Fund</h3>
+                    <p>Investing in industrial sector for traditional and digital transformation.</p>
+                    <div class="case-details">
+                        <div class="detail-item">
+                            <i class="fas fa-industry"></i>
+                            <span>Focus: Industrial modernization</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-digital-tachograph"></i>
+                            <span>Digital transformation initiatives</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 3 -->
+                <div class="case-card">
+                    <div class="case-category">
+                        <span>Education Expansion</span>
+                    </div>
+                    <h3>Educational Institutions Growth</h3>
+                    <p>Expanding from 2 school complexes in Riyadh to 9 complexes by 2028.</p>
+                    <div class="case-details">
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Capacity Target: 16,500 students total</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Location: Riyadh expansion</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 4 -->
+                <div class="case-card">
+                    <div class="case-category">
+                        <span>Real Estate Development</span>
+                    </div>
+                    <h3>Rajis Platinum Tower Project</h3>
+                    <p>Establishing fund for 25-floor Rajis Platinum Tower project development.</p>
+                    <div class="case-details">
+                        <div class="detail-item">
+                            <i class="fas fa-building"></i>
+                            <span>25-floor luxury tower</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-fund"></i>
+                            <span>Dedicated development fund</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Strategies Section -->
+    <section class="section future-section">
+        <div class="container">
+            <div class="future-header">
+                <h2 class="section-title">INNOVATIVE STRATEGIES FOR THE FUTURE</h2>
+                <p>Constantly evolving to meet the dynamic needs of the financial landscape.</p>
+            </div>
+            
+            <div class="future-content">
+                <div class="future-contact">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone</strong>
+                                <p>+966 54 073 2369</p>
+                                <p>+966 54 800 0068</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <p>info@maloon.sa</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Address</strong>
+                                <p>Saeed Bin Zaid Street, Qurtuba District, Riyadh, Kingdom of Saudi Arabia</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-stats">
+                        <div class="achievement-stat">
+                            <span class="stat-number">786+</span>
+                            <span class="stat-label">Clients</span>
+                        </div>
+                        <div class="achievement-stat">
+                            <span class="stat-number">888+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3>GET IN TOUCH</h3>
+                    <p class="form-subtitle">Proven Solutions For Your Success</p>
+                    
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Maloon Finance Logo" width="80">
+                    <div class="event-notice">
+                        <h4>Latest Event</h4>
+                        <p>Launch of the Itqan – Maloon Investment</p>
+                        <small>June 10, 2025</small>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contact Information</h4>
+                    <div class="contact-details">
+                        <p><i class="fas fa-phone"></i> +966 54 800 0068</p>
+                        <p><i class="fas fa-envelope"></i> info@maloon.sa</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Saeed Bin Zaid Street, Qurtuba District, Riyadh</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Copyright © 2026 Taqaan Tech (Pvt) Ltd. All Rights Reserved</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
