@@ -532,7 +532,7 @@ body {
 }
 
 .service-card {
-  flex: 0 0 320px;
+  flex: 0 0 380px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 25px;
@@ -625,7 +625,7 @@ body {
   transform: translateY(-50%);
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 10px;
   pointer-events: none;
   z-index: 10;
 }
